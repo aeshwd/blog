@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Blog</title>
+  <link rel="stylesheet" href="write.css">
+  <link rel="shortcut icon" href="blog-logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="admin.html" class="logo">Admin Panel</a>
+      <a href="view.html">View Blogs</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="form-section">
+      <h1 style="text-align: center;">Write a New Blog</h1>
+      <form id="blog-form">
+        <input type="text" id="title" placeholder="Blog Title" required>
+        <input type="file" id="image" accept="image/*" required>
+        <textarea id="description" placeholder="Blog Description" rows="5" required></textarea>
+        <input type="text" id="author" placeholder="Author Name" required>
+        
+        <input type="datetime-local" id="datetime" required>
+        <button type="button" id="submit-blog" class="submit-btn">Submit Blog</button>
+      </form>
+    </section>
+  </main>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>

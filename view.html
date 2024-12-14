@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Blogs</title>
+  <link rel="stylesheet" href="view.css">
+  <link rel="shortcut icon" href="blog-logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="admin.html" class="logo">Admin Panel</a>
+      <a href="write.html">Write Blogs</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>All Blogs</h1>
+    <div id="blogs-container" class="blogs-list"></div>
+  </main>
+  
+
+  <div id="update-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+    <div style="background: #fff; margin: 10% auto; padding: 20px; border-radius: 8px; width: 90%; max-width: 500px; position: relative;">
+      <h3>Update Blog</h3>
+      <label for="update-title">Title:</label>
+      <input type="text" id="update-title" style="width: 100%; margin-bottom: 10px;">
+      <label for="update-description">Description:</label>
+      <textarea id="update-description" style="width: 100%; margin-bottom: 10px;"></textarea>
+      <label for="update-author">Author:</label>
+      <input type="text" id="update-author" style="width: 100%; margin-bottom: 10px;">
+      <label for="update-image">Image:</label>
+      <input type="file" id="update-image" style="width: 100%; margin-bottom: 10px;">
+      <button id="save-update" style="background: #28a745; color: #fff; padding: 10px; border: none; cursor: pointer; margin-right: 10px;">Save</button>
+      <button id="close-update" style="background: #dc3545; color: #fff; padding: 10px; border: none; cursor: pointer;">Cancel</button>
+    </div>
+  </div>
+  
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
